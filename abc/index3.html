@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <mate charset="utf-8"/>
+        <mate http-equiv="X-ua-compatible"content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>彭于晏登入</title>
+        <style>
+            @media screen and (min-width: 480px){
+            body{
+                /* width:960px; */
+                /* margin:auto; */
+                background-color: rgb(165, 146, 146);
+            
+            
+                
+
+            }
+            .colock{
+                position:relative;
+                width:100px;
+                height:100px;
+                border-radius:50px;
+                background-image:url(../colock.png);
+                border:1px solid black;
+                background-size: 120%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-position-x: -6.5px;
+                background-position-y: -4.5px;
+            }
+            .abc{
+                position:absolute;
+                top:30px;
+                right:40px;
+                width:100px;
+                height:80px;
+
+                animation: abc 1s infinite linear;
+                
+            }
+            .a1{
+                display:flex;
+                width:960px;
+                margin:auto;
+                background-color: rgb(90, 46, 46);
+            }
+            .a2,.a-1,.a-2{
+                margin:auto;
+            }
+            .a-1 div,.a-2 div{
+                margin:20px;
+            }
+            .a-1 div label:nth-child(-n+1){
+                display:block;
+                word-wrap:break-word;
+                /* background-color: #fff; */
+                margin:5px 0px;
+            }
+            
+            .relative{
+                position:relative;
+                bottom:50px;
+                
+                /* justify-content:flex-end; */
+                /* flex-direction:row-reverse; */
+            }
+            .a1-1 input,.a2-1 input,.a2-2 input,.a2-3 input,.a1-2 input{
+                
+                background-repeat: no-repeat;
+                text-indent:30px;
+                outline-offset:0px;
+                outline:none;
+                border:none;
+                border-bottom:4px double black;
+                
+                padding:5px 50px 0px 0px;
+                background-position:5px 8px;
+                background-color:initial;
+                font-size:20px;
+            }
+            ::placeholder{
+                color:bisque;
+                opacity:0.5;
+            }
+            .a1-1  input:focus,.a1-2  input:focus,.a2-2 input:focus,.a2-3 input:focus,.a2-1 input:focus{
+                border-radius:20px;
+                background-color: #fff;
+                transition:0.5s;
+                
+            }
+            
+                
+
+            
+            .a1-3 input:checked+label,.a2-4 input:checked+label{
+                color:red;
+                font-weight:bolder;
+                font-size:20px;
+            }
+            .a2-4,.a2-5,.a1-3,.a1-4{
+                padding-left:20px;
+                /* background-color: #fff; */
+            }
+            
+            
+        }
+        .a1-1 input,.a2-1 input{
+                background-image:url(../person.png);
+            }
+            .a1-2 input,.a2-2 input{
+                background-image:url(../password.png);
+            }
+            .a2-3 input{
+                background-image:url(../mail-2.png);
+                background-size: 6%;
+                
+                
+            }
+        .a2 {
+                width:100%;
+                height:700px;
+                position:relative;
+                margin:auto;
+                /* background-size: 50%; */
+                background-color:rgb(129, 38, 38);
+                background:linear-gradient(top,#ffffff,rgba(51,51,51,0)),url(../aa.html/21.jpg) center bottom no-repeat;
+                background:-moz-linear-gradient(top,#1a1818,rgba(51,51,51,0)),url(../aa.html/21.jpg) center bottom no-repeat;
+                background:-webkit-radial-gradient(300px 300px ,rgba(90, 46, 46, 0)30% , rgba(90, 46, 46, 0.753)60%),url(../aa.html/21.jpg)center  bottom no-repeat;
+        }
+       
+
+            
+            #a{
+                width:2px;
+                height:45px;
+                background-color:black;
+                position:absolute;
+                left:48px;
+                top:5px;
+                transform-origin:50% 45px;
+                animation:colock 1s infinite linear;
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            }
+            #b{
+                width:4px;
+                height:35px;
+                background-color:rgb(129, 29, 29);
+                position:absolute;
+                left:48px;
+                top:20px;
+                transform-origin:50% 32px;
+                animation:colock 6s infinite linear;
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            }
+            #c{
+                width:4px;
+                height:25px;
+                background-color:rgb(24, 160, 96);
+                position:absolute;
+                left:48px;
+                top:30px;
+                transform-origin:50% 22px;
+                animation:colock 72s infinite linear;
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            }
+            @keyframes colock{
+                0%{transform:rotate(0deg);}
+                100%{transform:rotate(360deg)}
+            }
+            .a1-4 input,.a2-5 input{
+                padding:5px 80px;
+                /* border-radius:20px; */
+                background-color:initial;
+                animation:color 5s infinite linear;
+
+            }
+            .a1-4 input:hover,.a2-5 input:hover{
+                background-color:antiquewhite;
+                font-weight:bolder;
+                box-shadow:5px 5px 10px black;
+                animation:none;
+                border-radius:20px;
+            }
+            @keyframes color{
+                10%{
+                    transform:scale(0.9);
+                    background:rgba(173, 87, 61, 0.671);
+                    border-radius:20px;
+                    font-weight:bolder;
+                    font-size:20px;
+                }
+            }
+           
+            .abc:hover{
+                
+                
+            }
+            .abc:hover:after,.abc:hover:before{
+               
+            }
+            .abc:after,.abc:before{
+                position:absolute;
+                top:0;
+                content:"";
+                width: 50px;
+                height: 80px;
+                background:red;
+                border-radius:50px 50px 0 0;
+                 animation: abccolor 1s infinite linear;
+                /* -moz-transform:rotate(45deg); */
+                /* ;-webkit-transform:rotate(45deg) */
+                 /* -o-transform:rotate(45deg); */
+                /* -ms-transform:rotate(45deg); */
+                /* transform:rotate(45deg);} */
+                
+            }
+            .abc:before{
+                left: 50px;
+                transform:rotate(-45deg);
+                transform-origin:0 100% ;
+            }
+            .abc:after{
+                left:0px;
+                transform:rotate(45deg);
+                transform-origin:100% 100% ;
+            }
+            @keyframes abc {
+                30%{
+                    transform:scale(0.5);
+                }
+                10% {transform:scale(1.2);
+                    
+                }
+                /* 50%{transform:rotatey(30deg);
+                }
+                
+                 100%{   transform:rotatey(150deg);} */
+                
+            }
+            @keyframes abccolor {
+                10%{
+                    background-color:rgb(165, 143, 143);
+                }
+                35% {background-color:#f0453fee;
+                }
+                75% {background-color:#970303ee;
+                }
+
+
+
+            }
+
+            @media screen and (max-width: 480px){
+                .a-1 div,.a-2 div{
+                margin:20px;
+            }
+            .a-1 div label:nth-child(-n+1){
+                display:block;
+                word-wrap:break-word;
+                /* background-color: #fff; */
+                margin:5px 0px;
+            
+            
+            /* .relative{
+                position:relative;
+                bottom:50px; */
+                
+                /* justify-content:flex-end; */
+                /* flex-direction:row-reverse; */
+            }
+            .a1-1 input,.a2-1 input,.a2-2 input,.a2-3 input,.a1-2 input{
+                
+                background-repeat: no-repeat;
+                text-indent:30px;
+                outline-offset:0px;
+                outline:none;
+                border:none;
+                border-bottom:4px double black;
+                
+                padding:5px 50px 0px 0px;
+                background-position:5px 8px;
+                /* background-color:aqua; */
+                font-size:20px;
+                background-color:inherit;
+                
+                
+            }
+            ::placeholder{
+                color:bisque;
+                opacity:0.5;
+            }
+            /* .a1-1  input:focus,.a1-2  input:focus,.a2-2 input:focus,.a2-3 input:focus,.a2-1 input:focus{
+                border-radius:20px;
+                background-color: #fff;
+                transition:0.5s;
+                
+            } */
+            
+                
+
+            
+            .a1-3 input:checked+label,.a2-4 input:checked+label{
+                color:red;
+                font-weight:bolder;
+                font-size:20px;
+            }
+            .a2-4,.a2-5,.a1-3,.a1-4{
+                padding-left:20px;
+                /* background-color: #fff; */
+            }
+                .abc{
+                position:fixed;
+                top:7%;
+                right:10%;
+                width:100px;
+                height:80px;
+                 transform:scale(0.5); 
+                animation: abc 1s infinite;
+                
+            }
+            @keyframes abc {
+                10% {transform:scale(1);
+                    
+                }
+            }
+            /* .abc:after,.abc:before{background-size: 50%;} */
+            .colock{
+                position:fixed;
+                top:5%;
+                left:10%;
+                width:100px;
+                height:100px;
+                border-radius:50px;
+                background-image:url(../colock.png);
+                border:1px solid black;
+                background-size: 120%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-position-x: -6.5px;
+                background-position-y: -4.5px;
+            }
+                body{
+                    width:100%;
+                    margin:0 auto;
+                    text-align: center;
+                   
+                   
+                }
+                .a1{
+                    margin:0 auto;
+                    text-align: center;
+                    width:100%;
+                    object-fit: contain;
+                }
+                .a2{
+                    background-size: 120%;
+                    border-radius:15px;
+                    width:100%;
+                    margin:2%;
+                    position:fixed;
+                    top:-30%;
+                    
+                    background-repeat: no-repeat;
+                }
+                
+
+                    
+                
+                
+
+                    
+                
+                #aa1{
+                    background-color:inherit;
+                    clear:both;
+                    display:block;
+                    display:flex;
+                    flex-direction:column;
+                    height:120%;
+
+                    position:absolute;
+                    top:50%;
+                    
+                }
+                /* #aa1 form {
+                    
+                    position:relative;
+                    background-color: rgb(155, 146, 202);
+                } */
+                .input{
+                    position:relative;
+                    opacity:unset;
+                    /* opacity:0.5; */
+                }
+
+                .relative:not(.input){
+                    position:relative;
+                    top:10%;
+                    background-color: rgb(114, 100, 100,0.5);
+                }
+            
+            .input:focus{
+                
+                border-radius:20px;
+                background-color: rgb(211, 20, 20,1);
+                transition:0.5s;
+                font-weight:bolder;
+                transform:scale(1.1);
+                z-index:999;
+                font-size:20px;
+                
+            }
+
+     }
+        </style>
+    </head>
+
+    <body>
+        <div class="a1">
+            <div  class="a2">
+                <div class="abc">
+
+                </div>
+                <div class="colock"><div id="a"></div>
+                    <div id="b"></div>
+                    <div id="c"></div>
+                </div>
+                
+                <!-- <img src="../aa.html/21.jpg"alt="彭于晏"/> -->
+                
+            </div>
+        </div>
+        <div class="a1" id="aa1">
+            <form action="123" class="a-1 relative">
+                <div class="a1-1">
+                    <label >帳號</label>
+                    <input class="input"type="text"placeholder="8~10個數字"pattern="[a-z]{8,10}"quired/>
+                </div>
+                <div class="a1-2">
+                    <label for="2">密碼</label>
+                    <input class="input"type="password"placeholder="8~10個數字+英文"name="2"quired/>
+                </div>
+                <div class="a1-3">
+                    
+                    <input type="radio"name="3"quired/>
+                    <label for="3">同意</label>
+                    
+                    <input type="radio"name="3"quired/>
+                    <label for="3">不同意</label>
+                </div>
+                <div class="a1-4">
+                    
+                    <input type="submit"value="登入"/>
+                </div>
+            </form>
+            <form class="a-2 relative">
+                <div class="a2-1">
+                    <label for="1-1">帳號</label>
+                    <input class="input"type="text"placeholder="8~10個數字"name="1-1"/>
+                </div>
+                <div class="a2-2">
+                    <label for="2">密碼</label>
+                    <input class="input"type="password"placeholder="8~10個數字+英文"name="2"/>
+                </div>
+                <div class="a2-3">
+                    <label for="3">mail</label>
+                    <input type="mail"placeholder="電子郵件"name="3"/>
+                </div>
+                <div class="a2-4">
+                    
+                    <input type="radio"name="3"/>
+                    <label for="3">同意</label>
+                    
+
+                    <input type="radio"name="3"/>
+                    <label for="3">不同意</label>
+                </div>
+                <div class="a2-5">
+                    
+                    <input type="submit"value="註冊"/>
+                </div>
+                
+            </form>
+        </div>
+    </body>
+</html>
